@@ -2,21 +2,105 @@
 <html lang='en'>
 
 <head>
-  <meta charset='utf8'>
+  <meta charset='utf-8'>
   <title>prompt, alert, calculate</title>
 
   <!-- load the styles -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/flexgrid.css">
 
   <!-- load the shared data -->
 
-  <!-- load the handler scripts -->
+  <script src="./scripts/shared-variables.js"></script>
 
+  <!-- load the handler scripts -->
+  <script src="./scripts/handlers/add.js"></script>
+  <script src="./scripts/handlers/divide.js"></script>
+  <script src="./scripts/handlers/instructions.js"></script>
+  <script src="./scripts/handlers/last-result-display.js"></script>
+  <script src="./scripts/handlers/last-result-reset.js"></script>
+  <script src="./scripts/handlers/multiply.js"></script>
+  <script src="./scripts/handlers/subtract.js"></script>
 
   <!-- Leave this here!  It renders the review buttons  -->
   <script src='./review-buttons/init.js'></script>
 
 </head>
 
-<body></body>
+<body>
+  <div class="page-wrapper">
+
+    <header>
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>Your Prompt Alert Calculator</h1>
+          </div>
+       </div>
+      </div>
+    </header>
+
+    <section>
+          <div class="container">
+            <div class="row center-xs center-sm center-md center-lg middle-xs middle-md middle-lg">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <h2>Just like any other calculator, <br> you can use this to do a little math!</h2>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <button class="btn-top" onclick='instructionsHandler()'>Instructions</button>
+                </div>
+            </div>
+          </div>
+    
+          <div class="container">
+            <h6>---</h6>
+            <div class="row center-xs center-sm center-md center-md middle-xs middle-sm middle-md middle-lg">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <button class="btn-middle" onclick='addHandler()'>Add <br> (+)</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div>
+                        <button class="btn-middle" onclick='subtractHandler()'>Subtract <br> (-)</button>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div>
+                      <button class="btn-middle" onclick='multiplyHandler()'>Multiply <br> (x)</button>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <div>
+                    <button class="btn-middle" onclick='divideHandler()'>Divide <br> (/)</button>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                      <div>
+                        <button class="btn-bottom-left" onclick='displayLastResultHandler()'>Display Result</button>
+                      </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <div>
+                    <button class="btn-bottom-right" onclick='resetLastResultHandler()'>Reset All</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </section>
+  
+    <footer>
+      <div class="container">
+        <div class="row center-xs center-sm center-md center-lg">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <p>Copyright &copy; 2020 | SkyBlue Team </p>
+            <p> Feruz, Harun, Miroslav, Murielle & Yana</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
 
 </html>
