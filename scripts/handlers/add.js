@@ -12,7 +12,7 @@ function add(x, y) {
   if (typeof x !== 'number') { throw new TypeError('x'); }
   if (typeof y !== 'number') { throw new TypeError('y'); }
 
-  const result = _;
+  const result = x + y;
 
   if (typeof result !== 'number') { throw new TypeError('result'); }
   return result;
@@ -83,10 +83,14 @@ function addHandler() {
   console.log('lastResult (before):', typeof lastResult, '\n', lastResult);
 
   // read a number from the user
-
+const input1 = prompt('Please put your first number to add');
+const input2 = prompt('Please put your second number to add');
   // add the user's number to the last result and reassign lastResult
-  _;
+  const addResult = +input1 + +input2;
   console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
 
+  
   alert(`the new result is: ${lastResult}`);
+  alert(`Total result is ${addResult}`);
+  alert('Thank you for test !')
 }
