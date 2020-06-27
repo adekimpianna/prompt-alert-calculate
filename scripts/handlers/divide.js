@@ -87,7 +87,7 @@ function divideHandler() {
 
 
   // divide the last result by the user's number and reassign lastResult
-  lastResult = divide(num1, lastResult) ;
+  lastResult = divide(lastResult, num1) ;
   console.log('lastResult (after):', typeof lastResult, '\n', lastResult);
 
   alert(`the new result is: ${lastResult}`);
