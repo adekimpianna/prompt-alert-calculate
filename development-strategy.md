@@ -180,34 +180,6 @@ _As a site visitor, I can click on the multiply button, I can multiple numbers t
 
 ---
 
-## 8.  User story: Instructions Button
-
-_As a site visitor, I can click on the instructions button, I can understand how to operate this site_
-
-> Assigned to : Yana
-
-### Branch(es)
-
-1. Create an issue related to this user story on Github and assign self
-1. Add a brach named `instruction-button`
-1. Validate the code for this work
-4. Push the changes from this branch when it is done
-4. Pull request and merge it on Github
-
-### HTML
-
-- Nothing to be done at this stage
-
-### CSS
-
-- Nothing to be done at this stage
-
-### JavaScript
-1. Analyse, detect the errors or missing parts
-2. Complete the codes
-3. Do self-test
-
----
 
 ## Finishing Touches
 
